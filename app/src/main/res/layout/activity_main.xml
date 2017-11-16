@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/padding_16dp"
+    android:paddingLeft="@dimen/padding_8dp"
+    android:paddingRight="@dimen/padding_8dp"
+    android:background="@color/grisFondo">
+
+
+    <LinearLayout
+        android:id="@+id/contenedorFotos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_8dp"
+
+        android:background="@color/fondoFotos">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/altoFoto"/>
+
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/fotocarne02"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="@dimen/padding_4dp"
+            android:layout_marginRight="@dimen/padding_4dp"
+            android:layout_height="@dimen/altoFoto"/>
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/fotocarne01"
+            android:scaleType="centerCrop"
+            android:layout_height="@dimen/altoFoto"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="@dimen/padding_8dp"
+        android:background="@color/fondoFotos"
+        android:layout_below="@id/contenedorFotos">
+
+     <TextView
+     style="@style/MyTextViewStyle"
+         android:text="@string/passport"/>
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
