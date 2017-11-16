@@ -1,4 +1,24 @@
 <resources>
     <string name="app_name">PassportApp</string>
     <string name="passport">Passport</string>
+    <string name="name">Name</string>
+    <string name="nameHint">Write here your name</string>
+    <string name="surname">Surname</string>
+    <string name="surnameHint">Write here your surname</string>
+
+
+    <string name="USA">USA</string>
+    <string name="spain">Spain</string>
+    <string name="France">France</string>
+    <string name="germany">Germany</string>
+
+
+    <string-array name="spinnerCountries">
+        <item>@string/USA</item>
+        <item>@string/spain</item>
+        <item>@string/France</item>
+        <item>@string/germany</item>
+    </string-array>
+
+
 </resources>

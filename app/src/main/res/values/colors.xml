@@ -8,8 +8,8 @@
 
     <!--Passport Colors-->
 
-    <color name ="grisFondo">#c7c7c7</color>
-    <color name ="fondoFotos">#7697d9</color>
-    <color name ="blanco">#FFF</color>
+    <color name ="greybkground">#c7c7c7</color>
+    <color name ="photosbkground">#7697d9</color>
+    <color name ="white">#FFF</color>
 
 </resources>
