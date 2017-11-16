@@ -11,6 +11,7 @@
     <string name="spain">Spain</string>
     <string name="France">France</string>
     <string name="germany">Germany</string>
+    <string name="UEcitizien">UEcitizien</string>
 
 
     <string-array name="spinnerCountries">
