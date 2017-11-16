@@ -1,116 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/greybkground"
-    android:paddingLeft="@dimen/padding_8dp"
-    android:paddingRight="@dimen/padding_8dp"
-    android:paddingTop="@dimen/padding_16dp">
-
-
-    <LinearLayout
-        android:id="@+id/photoContainer"
+    android:layout_height="match_parent">
+    
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/photosbkground"
-
-        android:padding="@dimen/padding_8dp">
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="@dimen/altoFoto"
-            android:layout_weight="1" />
+        android:layout_height="match_parent">
 
 
-        <ImageView
-            android:id="@+id/image1"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/altoFoto"
-            android:layout_marginLeft="@dimen/padding_4dp"
-            android:layout_marginRight="@dimen/padding_4dp"
-            android:layout_weight="1"
-            android:scaleType="centerCrop"
-            android:src="@drawable/fotocarne02" />
-
-        <ImageView
-            android:id="@+id/image2"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/altoFoto"
-            android:layout_weight="1"
-            android:scaleType="centerCrop"
-            android:src="@drawable/fotocarne01" />
-    </LinearLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/photoContainer"
-        android:layout_marginTop="@dimen/padding_8dp"
-        android:background="@color/photosbkground"
-        android:padding="@dimen/padding_8dp">
-
-        <TextView
-            android:id="@+id/lblPassport"
-            style="@style/MyTextViewStyle"
-            android:gravity="center"
-            android:text="@string/passport"
-            android:textSize="@dimen/text_20sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/lblName"
-            style="@style/MyTextViewStyleForm"
-            android:layout_width="@dimen/size_80dp"
-            android:layout_below="@+id/lblPassport"
-            android:text="@string/name" />
-
-        <EditText
-            android:id="@+id/editname"
-            style="@style/MyTextViewStyleForm"
-            android:layout_below="@id/lblPassport"
-            android:layout_toRightOf="@+id/lblName"
-            android:hint="@string/nameHint" />
-
-        <TextView
-            android:id="@+id/lblSurname"
-            style="@style/MyTextViewStyleForm"
-            android:layout_width="@dimen/size_80dp"
-            android:layout_below="@+id/lblName"
-            android:text="@string/surname" />
-
-        <EditText
-            android:id="@+id/editsurname"
-            style="@style/MyTextViewStyleForm"
-            android:layout_below="@id/editname"
-            android:layout_toRightOf="@+id/lblSurname"
-            android:hint="@string/surnameHint" />
-
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/lblSurname">
+            android:layout_height="match_parent"
+            android:background="@color/greybkground"
+            android:paddingLeft="@dimen/padding_8dp"
+            android:paddingRight="@dimen/padding_8dp"
+            android:paddingTop="@dimen/padding_16dp">
 
-            <Spinner
-                android:id="@+id/spinnerCountries"
-                android:layout_width="0dp"
+
+            <LinearLayout
+                android:id="@+id/photoContainer"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:entries="@array/spinnerCountries"
-                android:layout_weight="1">
-            </Spinner>
+                android:background="@color/photosbkground"
 
-           <CheckBox
-               android:text="@string/UEcitizien"
-               android:layout_width="0dp"
-               android:layout_height="wrap_content"
-               android:layout_weight="1"/>
+                android:padding="@dimen/padding_8dp">
 
-
-        </LinearLayout>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/altoFoto"
+                    android:layout_weight="1" />
 
 
-    </RelativeLayout>
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/altoFoto"
+                    android:layout_marginLeft="@dimen/padding_4dp"
+                    android:layout_marginRight="@dimen/padding_4dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fotocarne02" />
 
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/altoFoto"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fotocarne01" />
+            </LinearLayout>
 
-</RelativeLayout>
+            <View
+                android:id="@+id/emptyView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_80dp"
+                android:layout_below="@id/photoContainer"></View>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emptyView"
+                android:layout_marginTop="@dimen/padding_8dp"
+                android:background="@color/photosbkground"
+                android:padding="@dimen/padding_8dp">
+
+                <TextView
+                    android:id="@+id/lblPassport"
+                    style="@style/MyTextViewStyle"
+                    android:gravity="center"
+                    android:text="@string/passport"
+                    android:textSize="@dimen/text_20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblName"
+                    style="@style/MyTextViewStyleForm"
+                    android:layout_width="@dimen/size_80dp"
+                    android:layout_below="@+id/lblPassport"
+                    android:text="@string/name" />
+
+                <EditText
+                    android:id="@+id/editname"
+                    style="@style/MyTextViewStyleForm"
+                    android:layout_below="@id/lblPassport"
+                    android:layout_toRightOf="@+id/lblName"
+                    android:hint="@string/nameHint" />
+
+                <TextView
+                    android:id="@+id/lblSurname"
+                    style="@style/MyTextViewStyleForm"
+                    android:layout_width="@dimen/size_80dp"
+                    android:layout_below="@+id/lblName"
+                    android:text="@string/surname" />
+
+                <EditText
+                    android:id="@+id/editsurname"
+                    style="@style/MyTextViewStyleForm"
+                    android:layout_below="@id/editname"
+                    android:layout_toRightOf="@+id/lblSurname"
+                    android:hint="@string/surnameHint" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lblSurname">
+
+                    <Spinner
+                        android:id="@+id/spinnerCountries"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:entries="@array/spinnerCountries"></Spinner>
+
+                    <CheckBox
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/UEcitizien" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
