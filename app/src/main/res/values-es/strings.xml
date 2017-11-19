@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Passport App</string>
+    <string name="delete">Eliminar</string>
+    <string name="load">Cargar</string>
+    <string name="save">Guardar</string>
+    <string name="UEcitizien">Ciudadania Europea</string>
+    <string name="germany">Alemania</string>
+    <string name="France">Francia</string>
+    <string name="spain">España</string>
+    <string name="USA">EUA</string>
+    <string name="surnameHint">Escribe tu apellido</string>
+    <string name="surname">Apellido</string>
+    <string name="nameHint">Escribe tu nombre</string>
+    <string name="name">nombre</string>
+    <string name="passport">Pasaporte</string>
+</resources>

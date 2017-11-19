@@ -1,17 +1,22 @@
 <resources>
-    <string name="app_name">PassportApp</string>
+    <string name="app_name">Passport App</string>
     <string name="passport">Passport</string>
     <string name="name">Name</string>
     <string name="nameHint">Write here your name</string>
     <string name="surname">Surname</string>
     <string name="surnameHint">Write here your surname</string>
 
-
+<!--label-->
     <string name="USA">USA</string>
     <string name="spain">Spain</string>
     <string name="France">France</string>
     <string name="germany">Germany</string>
-    <string name="UEcitizien">UE citizien</string>
+    <string name="UEcitizien">UE citizenship</string>
+
+    <!--buttons-->
+    <string name="save">Save</string>
+    <string name="load">Load</string>
+    <string name="delete">Delete</string>
 
 
     <string-array name="spinnerCountries">
@@ -20,6 +25,10 @@
         <item>@string/France</item>
         <item>@string/germany</item>
     </string-array>
+
+
+
+
 
 
 </resources>
