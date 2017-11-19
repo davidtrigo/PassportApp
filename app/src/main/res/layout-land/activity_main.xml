@@ -20,21 +20,26 @@
         android:layout_above="@id/buttonsId">
 
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/greybkground"
             android:paddingLeft="@dimen/padding_8dp"
             android:paddingRight="@dimen/padding_8dp"
-            android:paddingTop="@dimen/padding_16dp">
+            android:paddingTop="@dimen/padding_16dp"
+            android:orientation="horizontal">
 
 
             <LinearLayout
                 android:id="@+id/photoContainer"
+                android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/blueSky"
-                android:padding="@dimen/padding_8dp">
+                android:padding="@dimen/padding_8dp"
+                android:layout_marginRight="@dimen/padding_4dp">
+
+
 
                 <View
                     android:layout_width="0dp"
@@ -50,7 +55,7 @@
                     android:layout_marginRight="@dimen/padding_4dp"
                     android:layout_weight="1"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/fotocarne02" />
+                    android:src="@drawable/fotocarne02"/>
 
                 <ImageView
                     android:id="@+id/image2"
@@ -58,13 +63,13 @@
                     android:layout_height="@dimen/altoFoto"
                     android:layout_weight="1"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/fotocarne01" />
+                    android:src="@drawable/fotocarne01"/>
             </LinearLayout>
 
             <View
                 android:id="@+id/emptyView"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/size_80dp"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/photoContainer"></View>
 
             <RelativeLayout
@@ -86,7 +91,7 @@
                 <TextView
                     android:id="@+id/lblName"
                     style="@style/MyTextViewStyleForm"
-                    android:layout_width="@dimen/size_80dp"
+                    android:layout_width="match_parent"
                     android:layout_below="@+id/lblPassport"
                     android:text="@string/name" />
 
@@ -124,23 +129,20 @@
                         android:entries="@array/spinnerCountries"></Spinner>
 
                     <CheckBox
+                        android:id="@+id/UEcitizien"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/UEcitizien" />
-
                 </LinearLayout>
-
             </RelativeLayout>
-        </RelativeLayout>
-
-
+        </LinearLayout>
     </ScrollView>
 
     <LinearLayout
         android:id="@+id/buttonsId"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="@color/blueSky"
         android:orientation="horizontal">

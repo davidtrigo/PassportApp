@@ -8,7 +8,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:screenOrientation="portrait"
         android:theme="@style/AppTheme">
+        <!--  android:configChanges="orientation|screenSize" -> para gestionar cambios de configuración de la activity -->
+        <!-- android:screenOrientation="portrait" -> para decirle que solo se reproduzca verticalmente -->
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
